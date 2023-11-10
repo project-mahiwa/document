@@ -19,7 +19,7 @@ jobs:
           bun-version: latest
 
       - name: Cache dependencies
-        uses: actions/cache${{ env.cache-version }}
+        uses: actions/cache@v3
         with:
           path: ~/.bun
           key: ${{ env.cache-version }}-${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
