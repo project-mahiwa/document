@@ -1,0 +1,43 @@
+name: GitHubPagesへのVitePressのデプロイ(gh-pagesブランチに)
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  cache-version: v3
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Cache dependencies
+        uses: actions/cache${{ env.cache-version }}
+        with:
+          path: ~/.bun
+          key: ${{ env.cache-version }}-${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
+          restore-keys: |
+            ${{ env.cache-version }}-${{ runner.os }}-bun-
+
+      - name: install
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: bun i
+
+      - name: build
+        run: bun docs:build
+
+      - name: copy CNAME
+        run: cp CNAME docs/.vitepress/dist/CNAME
+
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.USUYUKI_GITHUB_TOKEN }}
+          publish_dir: ./docs/.vitepress/dist
