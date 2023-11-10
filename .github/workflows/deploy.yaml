@@ -34,7 +34,7 @@ jobs:
         run: bun docs:build
 
       - name: copy CNAME
-        run: cp CNAME docs/.vitepress/dist/CNAME
+        run: cp CNAME .vitepress/dist/CNAME
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
