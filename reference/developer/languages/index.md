@@ -8,6 +8,10 @@
 
 # Support Languages
 
+## MicroPython Compatibility
+
+See : https://micropython-docs-ja.readthedocs.io/ja/latest/library/index.html
+
 ## Arduino Compatibility <Badge type="tip" text="partial support" />
 
 See : https://www.arduino.cc/reference/en/
