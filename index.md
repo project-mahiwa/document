@@ -12,10 +12,10 @@ hero:
       link: /guide/getting_started
     - theme: alt
       text: Developer Reference
-      link: /reference/developer
+      link: /reference/developer/
     - theme: alt
       text: Maintainer Reference
-      link: /reference/maintainer
+      link: /reference/maintainer/
 
 features:
   - title: Write Varius Languages
