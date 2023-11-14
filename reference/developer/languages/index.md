@@ -8,6 +8,12 @@
 
 # Support Languages
 
+## TinyGo Compatibility
+
+See : https://tinygo.org/docs/guides/embedded/resources/
+
+https://tinygo.org/docs/reference/machine/
+
 ## MicroPython Compatibility
 
 See : https://micropython-docs-ja.readthedocs.io/ja/latest/library/index.html

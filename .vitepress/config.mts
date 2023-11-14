@@ -30,12 +30,12 @@ export default defineConfig({
       { text: "Getting Started", link: "/guide/getting-started" },
       {
         text: "Developer Reference",
-        link: "/reference/developer",
+        link: "/reference/developer/",
         activeMatch: "/reference/developer/*",
       },
       {
         text: "Maintainer Reference",
-        link: "/reference/maintainer",
+        link: "/reference/maintainer/",
         activeMatch: "/reference/maintainer/*",
       },
     ],
