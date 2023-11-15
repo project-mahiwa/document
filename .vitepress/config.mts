@@ -30,12 +30,12 @@ export default defineConfig({
       { text: "Getting Started", link: "/guide/getting-started" },
       {
         text: "Developer Reference",
-        link: "/reference/developer",
+        link: "/reference/developer/",
         activeMatch: "/reference/developer/*",
       },
       {
         text: "Maintainer Reference",
-        link: "/reference/maintainer",
+        link: "/reference/maintainer/",
         activeMatch: "/reference/maintainer/*",
       },
     ],
@@ -45,8 +45,11 @@ export default defineConfig({
         text: "Usage",
         items: [
           { text: "Getting Started", link: "/guide/getting-started" },
-          { text: "Support Languages", link: "/guide/languages" },
-          { text: "Support MCUs", link: "/guide/mcus" },
+          {
+            text: "Support Languages",
+            link: "/reference/developer/languages/",
+          },
+          { text: "Support MCUs", link: "/reference/developer/boards/" },
         ],
       },
       {
@@ -55,6 +58,7 @@ export default defineConfig({
         items: [
           {
             text: "Go",
+            link: "/reference/developer/languages/go/",
             collapsed: true,
             items: [
               { text: "Time", link: "/reference/developer/go/time" },

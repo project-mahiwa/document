@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Mahiwa Document"
-  text: "This is the Mahiwa document."
+  text: "Mahiwaは任意の言語で任意のマイコンを動かすプロジェクトです"
   tagline: MAHIWA can be written in Any High-level language and run on MicroController, which Integrates the latest functionality with WebAssembly.
   actions:
     - theme: brand
@@ -12,10 +12,10 @@ hero:
       link: /guide/getting_started
     - theme: alt
       text: Developer Reference
-      link: /reference/developer
+      link: /reference/developer/
     - theme: alt
       text: Maintainer Reference
-      link: /reference/maintainer
+      link: /reference/maintainer/
 
 features:
   - title: Write Varius Languages
