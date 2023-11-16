@@ -69,15 +69,17 @@ func main() {
 
 ```rust[Rust]
 #![no_std]
+#![no_main]
 
 use mahiwa_frontend_rust::arduino;
 use mahiwa_frontend_rust::serial;
 
-fn main() {
+#[no_mangle]
+fn _start() {
     serial::print("hello mahiwa written in Rust");
     loop {
         arduino::delay(900);
-        serial::print("hello mahiwa");
+        serial::println("hello mahiwa");
     }
 }
 ```
