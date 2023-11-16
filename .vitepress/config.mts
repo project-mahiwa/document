@@ -3,6 +3,16 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "en-US",
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+    },
+    ja: {
+      label: "Japanese",
+      lang: "ja",
+    },
+  },
   title: "Mahiwa Document",
   description:
     "MAHIWA can be written in Any High-level language and run on MicroController, which Integrates the latest functionality with WebAssembly.",
