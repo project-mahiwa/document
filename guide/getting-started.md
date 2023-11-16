@@ -59,7 +59,7 @@ import (
 )
 
 func main() {
-    serial.Print("Hello mahiwa")
+    serial.Print("Hello mahiwa written in Go language")
     for {
     serial.Println("mahiwa running")
     arduino.Delay(900)
@@ -74,13 +74,12 @@ use mahiwa_frontend_rust::arduino;
 use mahiwa_frontend_rust::serial;
 
 fn main() {
-    serial::print("hello mahiwa");
+    serial::print("hello mahiwa written in Rust");
     loop {
         arduino::delay(900);
         serial::print("hello mahiwa");
     }
 }
-
 ```
 
 :::
