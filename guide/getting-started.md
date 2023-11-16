@@ -13,9 +13,13 @@ go get -u github.com/project-mahiwa/mahiwa-frontend-go
 ```
 
 ```bash [Rust]
-cargo install mahiwa-frontend-rust
+cargo install mahiwa_frontend_rust
 ```
 
+:::
+
+:::warning
+Rust Crateのリポジトリはmahiwa-frontend-rustですが，Rustではスネークケースが一般的であるため，Crate名はmahiwa_frontend_rustにしています．
 :::
 
 ## Flash Environment
@@ -54,26 +58,29 @@ import (
    "github.com/project-mahiwa/mahiwa-frontend-go/arduino"
 )
 
-
-func setup() {
+func main() {
     serial.Print("Hello mahiwa")
-}
-
-func loop() {
+    for {
     serial.Println("mahiwa running")
     arduino.Delay(900)
-}
-
-func main() {
-    setup()
-    for {
-        loop()
     }
 }
 ```
 
 ```rust[Rust]
-🚧constructing
+#![no_std]
+
+use mahiwa_frontend_rust::arduino;
+use mahiwa_frontend_rust::serial;
+
+fn main() {
+    serial::print("hello mahiwa");
+    loop {
+        arduino::delay(900);
+        serial::print("hello mahiwa");
+    }
+}
+
 ```
 
 :::
