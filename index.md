@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Maintainer Reference
       link: /reference/maintainer/
+    - theme: brand
+      text: Benchmark
+      link: /research/benchmark/
 
 features:
   - title: Write Varius Languages
