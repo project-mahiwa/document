@@ -26,10 +26,14 @@ hero:
 features:
   - title: Write Varius Languages
     details: Mahiwa can be written in a variety of languages that can be compiled to WebAssembly.
+    icon: 🔠
   - title: Run Varius MicroController
     details: Mahiwa works with many microcontrollers
+    icon: 🤖
   - title: Flexibility
     details: Easily supports new microcontrollers and new languages.
+    icon: 🐦
   - title: Easy to use
     details: Environment construction is easy.
+    icon: 🍽️
 ---
