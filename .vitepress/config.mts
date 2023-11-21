@@ -99,6 +99,17 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: "Research",
+        collapsed: true,
+        items: [
+          { text: "Benchmark", link: "/research/benchmark/" },
+          {
+            text: "ipsj",
+            link: "/research/publication/ipsj86",
+          },
+        ],
+      },
     ],
 
     socialLinks: [
