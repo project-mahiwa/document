@@ -11,13 +11,16 @@ export default defineConfig({
   head: [
     [
       "link",
-      { rel: "icon", type: "image/svg+xml", href: "/mahiwa-logo-v1.svg" },
+      { rel: "icon", type: "image/svg+xml", href: "/logo/mahiwa-logo-v1.svg" },
     ],
-    ["link", { rel: "icon", type: "image/png", href: "/mahiwa-logo-v1.png" }],
+    [
+      "link",
+      { rel: "icon", type: "image/png", href: "/logo/mahiwa-logo-v1.png" },
+    ],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "/mahiwa-logo-v1.svg",
+    logo: "/logo/mahiwa-logo-v1.svg",
     editLink: {
       pattern: "https://github.com/project-mahiwa/document/edit/main/:path",
       text: "Edit this page on GitHub",
@@ -97,6 +100,17 @@ export default defineConfig({
               },
             ],
           },
+        ],
+      },
+      {
+        text: "Ecosystem",
+        collapsed: true,
+        link: "/ecosystem/",
+        items: [
+          { text: "PlatformIO", link: "/ecosystem/software/platformio" },
+          { text: "WebAssembly", link: "/ecosystem/software/webassembly" },
+          { text: "Wasm3", link: "/ecosystem/software/wasm3" },
+          { text: "Arduino", link: "/ecosystem/software/arduino" },
         ],
       },
       {
