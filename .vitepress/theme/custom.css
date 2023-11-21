@@ -1,0 +1,22 @@
+/* マヒワ(鳥)をもとに色を用意 */
+:root {
+  --vp-c-brand-1: #aa9954;
+  --vp-c-brand-2: #95911a;
+  --vp-c-brand-3: #ffd42a;
+
+  --vp-c-brand-soft: #e6fcb9;
+  /* ↓これ意味ない */
+  --vp-c-black: #343536;
+  --vp-c-white: #fafcfe;
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #ffd42a 30%,
+    #41d1ff
+  );
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #aa9954 50%,
+    #e6fcb9 50%
+  );
+}
