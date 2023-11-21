@@ -7,7 +7,7 @@ hero:
   text: "Mahiwaは任意の言語で任意のマイコンを動かすプロジェクトです"
   tagline: MAHIWA can be written in Any High-level language and run on MicroController, which Integrates the latest functionality with WebAssembly.
   image:
-    src: /mahiwa-logo-v1.svg
+    src: /logo/mahiwa-logo-v1.svg
     alt: Mahiwa Logo
   actions:
     - theme: brand
