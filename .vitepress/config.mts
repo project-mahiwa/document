@@ -103,6 +103,17 @@ export default defineConfig({
         ],
       },
       {
+        text: "Ecosystem",
+        collapsed: true,
+        link: "/ecosystem/",
+        items: [
+          { text: "PlatformIO", link: "/ecosystem/software/platformio" },
+          { text: "WebAssembly", link: "/ecosystem/software/webassembly" },
+          { text: "Wasm3", link: "/ecosystem/software/wasm3" },
+          { text: "Arduino", link: "/ecosystem/software/arduino" },
+        ],
+      },
+      {
         text: "Research",
         collapsed: true,
         items: [

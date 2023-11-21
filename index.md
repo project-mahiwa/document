@@ -19,7 +19,10 @@ hero:
     - theme: alt
       text: Maintainer Reference
       link: /reference/maintainer/
-    - theme: brand
+    - theme: alt
+      text: How It Works
+      link: /ecosystem/
+    - theme: alt
       text: Benchmark
       link: /research/benchmark/
 
