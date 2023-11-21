@@ -119,6 +119,21 @@ export default defineConfig({
         items: [
           { text: "Benchmark", link: "/research/benchmark/" },
           {
+            text: "Other Method",
+            collapsed: true,
+            items: [
+              { text: "TinyGo", link: "/research/other-method/tinygo" },
+              { text: "C/C++", link: "/research/other-method/c-cpp" },
+              { text: "Rust", link: "/research/other-method/rust" },
+              { text: "mruby", link: "/research/other-method/mruby" },
+              {
+                text: "MicroPython",
+                link: "/research/other-method/micropython",
+              },
+              { text: "WARDuino", link: "/research/other-method/warduino" },
+            ],
+          },
+          {
             text: "ipsj",
             link: "/research/publication/ipsj86",
           },
