@@ -61,12 +61,11 @@ export default defineConfig({
         items: [
           {
             text: "Go",
-            link: "/reference/developer/languages/go/",
-            collapsed: true,
-            items: [
-              { text: "Time", link: "/reference/developer/go/time" },
-              { text: "Serial", link: "/reference/edward/go/serial" },
-            ],
+            link: "/reference/developer/languages/go",
+          },
+          {
+            text: "Rust",
+            link: "/reference/developer/languages/rust",
           },
         ],
       },
