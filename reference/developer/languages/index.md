@@ -18,11 +18,13 @@ https://tinygo.org/docs/reference/machine/
 
 See : https://micropython-docs-ja.readthedocs.io/ja/latest/library/index.html
 
+<!-- Badge → https://vitepress.dev/reference/default-theme-badge -->
+
 ## Arduino Compatibility <Badge type="tip" text="partial support" />
 
 See : https://www.arduino.cc/reference/en/
 
-### Digiital I/O <Badge type="warning" text="yet" />
+### Digital I/O <Badge type="tip" text="experimental" />
 
 #### digitalRead()
 
@@ -30,15 +32,39 @@ See : https://www.arduino.cc/reference/en/
 
 #### pinMode()
 
-### Analog I/O <Badge type="warning" text="yet" />
+---
+
+### Analog I/O <Badge type="tip" text="experimental" />
 
 #### analogRead()
 
-#### analogReference()
+#### analogReference() <Badge type="warning" text="yet" />
+
+::: warning
+マイコンによって定数が変化するため，一旦実装を保留
+:::
 
 #### analogWrite()
 
-### Time <Badge type="warning" text="yet" />
+---
+
+### Zero, Due & MKR Family <Badge type="danger" text="not support" />
+
+::: warning
+一部マイコン限定なので，サポートは一旦見送る(後ほどライブラリとしての追加はあり)
+:::
+
+---
+
+### Advanced I/O <Badge type="warning" text="yet" />
+
+::: warning
+一旦保留
+:::
+
+---
+
+### Time <Badge type="tip" text="experimental" />
 
 #### delay()
 
@@ -48,17 +74,45 @@ See : https://www.arduino.cc/reference/en/
 
 #### millis()
 
-### Math <Badge type="warning" text="yet" />
+---
+
+### Math
 
 ::: warning
 WebAssembly側で関数作るのと関数呼び出しするのではどっちが早いか測定する必要がありそう。
 :::
 
-### Trigonometry <Badge type="warning" text="yet" />
+#### abs()
+
+#### constrain()
+
+#### map()
+
+#### max()
+
+#### min()
+
+#### pow()
+
+#### sq()
+
+#### sqrt()
+
+---
+
+### Trigonometry <Badge type="tip" text="experimental" />
 
 ::: warning
 上に同じ
 :::
+
+#### sin
+
+#### cos
+
+#### tan
+
+---
 
 ### Characters <Badge type="warning" text="yet" />
 
@@ -66,17 +120,24 @@ WebAssembly側で関数作るのと関数呼び出しするのではどっちが
 すべて実装必要？
 :::
 
-### Rundom Numbers <Badge type="warning" text="yet" />
+---
+
+### Rundom Numbers <Badge type="tip" text="experimental" />
 
 #### rundom()
 
 #### rundomSeed()
 
+---
+
 ### Bits and Bytes <Badge type="warning" text="yet" />
 
 ::: warning
 WebAssembly側で関数作るのと関数呼び出しするのではどっちが早いか測定する必要がありそう。
+ポインタ的な使い方ができないのに，これ実装できる？？
 :::
+
+---
 
 ### External Interrupts <Badge type="warning" text="yet" />
 
@@ -84,23 +145,31 @@ WebAssembly側で関数作るのと関数呼び出しするのではどっちが
 
 #### detachInterrupt()
 
+#### digitalPinToInterrupt()
+
+---
+
 ### Interrupts <Badge type="warning" text="yet" />
 
 #### interrupts()
 
 #### noInterrupts()
 
+---
+
 ### Communication <Badge type="warning" text="yet" />
 
-#### Print()
+#### Print
 
-#### Serial()
+#### Serial
 
 #### SPI
 
 #### Stream
 
 #### Wire
+
+---
 
 ### USB <Badge type="danger" text="not support" />
 

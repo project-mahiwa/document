@@ -1,6 +1,7 @@
 {
   "dependencies": {},
   "devDependencies": {
+    "license-checker": "^25.0.1",
     "vitepress": "^1.0.0-rc.25"
   },
   "scripts": {
