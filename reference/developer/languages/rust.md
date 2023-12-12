@@ -13,3 +13,7 @@ https://docs.rs/mahiwa_frontend_rust/latest/mahiwa_frontend_rust/
 Rustはスネークケースが慣習．
 
 crate:スネークケース()
+
+## Type
+
+https://doc.rust-lang.org/book/ch03-02-data-types.html
