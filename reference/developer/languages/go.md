@@ -14,3 +14,5 @@ package:ケバブケース
 https://go.dev/ref/spec#Types
 
 C/C++(Arduino)側とほぼ同等の型があるため、適切に再現できる。
+
+ただしC/C++でのintはint32,longはint64,doubleはfloat64とする。
