@@ -67,6 +67,24 @@ export default defineConfig({
             text: "Rust",
             link: "/reference/developer/languages/rust",
           },
+          {
+            text: "Troubleshooting",
+            collapsed: true,
+            items: [
+              {
+                text: "mahiwa",
+                link: "/reference/developer/troubleshooting/",
+              },
+              {
+                text: "Go",
+                link: "/reference/developer/troubleshooting/go",
+              },
+              {
+                text: "Rust",
+                link: "/reference/developer/troubleshooting/rust",
+              },
+            ],
+          },
         ],
       },
       {
@@ -117,6 +135,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: "Benchmark", link: "/research/benchmark/" },
+          { text: "Q&A", link: "/research/qa/" },
           {
             text: "Other Method",
             collapsed: true,
