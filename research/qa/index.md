@@ -2,6 +2,12 @@
 
 トラブルシューティングは[こちら](/reference/developer/troubleshooting)
 
+## printIntとprintLongで表せる数が同じなのはなぜか
+
+Cの仕様で，intとlongの表せる範囲が同じになっている． 詳細：https://learn.microsoft.com/ja-jp/cpp/c-language/cpp-integer-limits?view=msvc-170
+
+同じ範囲だが分けて関数を用意している理由は，型のチェックでコンパイルエラーになることを防ぐためである(Arduino関数にはintを返すものとlongを返すものが混在しているため)
+
 ## GoでGoでなくTinyGoでビルドするのはなぜか
 
 Go1.21からWebAssemblyへのコンパイルに対応したが，任意の外部関数をimportする仕組みがないため，TinyGoを用いている．  
