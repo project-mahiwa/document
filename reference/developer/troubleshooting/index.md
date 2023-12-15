@@ -55,6 +55,8 @@ m3_LinkRawFunction(module, serial, "printLong", "v(i)", &m3_printLong);
 
 - TinyGoではうまく実装できなかった処理をこのようにする傾向があるため，コンパイル時の出力を確認することで対処できる可能性が高い
 
+## Debug exception reason: Stack canary watchpoint triggered (wasm3)
+
 ### 関連issue
 
 - https://github.com/project-mahiwa/mahiwa-frontend-go/issues/26
