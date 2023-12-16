@@ -10,10 +10,16 @@ Cの仕様で，intとlongの表せる範囲が同じになっている． 詳�
 
 ## GoでGoでなくTinyGoでビルドするのはなぜか
 
-Go1.21からWebAssemblyへのコンパイルに対応したが，任意の外部関数をimportする仕組みがないため，TinyGoを用いている．  
+Go1.21からWebAssemblyへのコンパイルに対応した。
+`//go:wasmimport env fib` のようにつけると関数のエクスポートができるが、import用の仕組みは未対応などまだ発展途上の段階である。
+
+またMahiwaではマイコンをターゲットをしており、厳しい制限の中で利用する必要がある。
+
+これらを踏まえてMahiwaではTinyGoからのWebAssemblyコンパイルとした。
+
 TinyGoも本来であればLLVMのtargetでwasm32-unknown-unknownを指定したいが，[TinyGoのIssueにもある通り](https://github.com/tinygo-org/tinygo/issues/3068)それがまだ実現できていないのでやむを得ずwasm(wasm32-unknown-wasi)を利用しているを利用している．
 
-TinyGoではwasiとwasmをtargetで指定できるが，内部的にはどちらもLLVMのターゲットをwasm32-unknown-wasiとしているため，現行最新のTinyGo 0.30の時点ではwasiを指定することを推奨している．
+TinyGoではwasiとwasmをtargetで指定できるが，内部的にはどちらもLLVMのターゲットをwasm32-unknown-wasiとしているため，現行最新のTinyGo 0.30の時点ではwasmを指定することを推奨している．
 
 ## RustやGoなどUTF-8な文字コードに依存した環境で文字列を使用して問題ないか
 
