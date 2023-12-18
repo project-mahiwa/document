@@ -4,11 +4,23 @@
 
 よくある質問は[こちら](/research/qa/)
 
+## CPUパニックで再起動を繰り返しているとき，書込ができない
+
+- 電源ボタン長押ししながら書込の直前まで持っていくと，動く可能性が高い
+
+```
+A fatal error occurred: No serial data received.
+```
+
+のときなどに有効
+
 ## m3_LoadModule memory allocation failed
 
 - マイコンのメモリ不足
 - WebAssemblyが線形メモリを1ページ64KiB取るので，memoryのとりすぎなことが多い．
 - WebAssemblyビルド時のオプションでメモリ制限して対処
+- WASM_STACK_SLOTSの値が大きい場合にも発生(2048byteであれば，多くのマイコンでの動作を確認)
+- FreeRTOSでのタスクのスタック割り当てが多い場合でも発生するので，
 
 ### 関連Issue
 
