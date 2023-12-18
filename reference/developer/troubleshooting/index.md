@@ -4,7 +4,9 @@
 
 よくある質問は[こちら](/research/qa/)
 
-## CPUパニックで再起動を繰り返しているとき，書込ができない
+## No serial data received
+
+CPUパニックで再起動を繰り返しているときなどは，書込みが成功しにくい
 
 - 電源ボタン長押ししながら書込の直前まで持っていくと，動く可能性が高い
 
@@ -13,6 +15,16 @@ A fatal error occurred: No serial data received.
 ```
 
 のときなどに有効
+
+## A fatal error occurred: Could not open <portName>, the port doesn't exist
+
+- 適切な権限がない
+
+```
+sudo chmod a+rw /dev/ttyACM0
+```
+
+とかで権限を付与するとOK
 
 ## m3_LoadModule memory allocation failed
 
