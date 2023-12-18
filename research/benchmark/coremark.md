@@ -10,6 +10,8 @@ READMEより
 
 > minimal build is more complex, and requires modification of core_main.c.
 
+coremark-minimal.wasmを逆アセンブルして見ると，線形メモリの消費は1ページのみであり，対象とするすべてのマイコンで`memory allocation failed`にならず測定できる可能性が高い
+
 ## 測定結果
 
 details : https://github.com/project-mahiwa/mahiwa-backend/issues/99
