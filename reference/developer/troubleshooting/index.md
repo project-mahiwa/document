@@ -60,3 +60,12 @@ m3_LinkRawFunction(module, serial, "printLong", "v(i)", &m3_printLong);
 ### 関連issue
 
 - https://github.com/project-mahiwa/mahiwa-frontend-go/issues/26
+
+## Guru Meditation Error: Core 1 panic'ed (LoadProhibited). Exception was unhandled.
+
+- 不正なメモリ領域へのアクセスでエラーになっている．
+
+## m3_FindFunction function lookup failed
+
+- 開始のための関数を見つけられていないときに発生
+- webassembly上ではrunで開始の想定なのに，\_startをfindFunctrionしている場合などに発生
