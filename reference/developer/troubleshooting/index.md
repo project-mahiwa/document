@@ -43,6 +43,7 @@ sudo chmod a+rw /dev/ttyACM0
 ## missing imported function
 
 - wasm実行時にimportする関数情報に過不足があるときに発生
+- wasiの関数を誤って呼んだ場合にも起き，TinyGoではprintlnなどを使ってもコンパイラの段階で弾けなくてこのエラーになることがある．
 - 関数名が正しくても，wasm3登録時の引数のミスでも発動
 
 例えば
