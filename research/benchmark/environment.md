@@ -4,6 +4,18 @@
 pio version
 ```
 
+## Optimization options
+
+### pio
+
+- Arduino側で-Os(サイズ優先)が有効にされている
+
+### TinyGo
+
+https://tinygo.org/docs/reference/usage/important-options/
+
+- TinyGoのデフォルトは`--opt=z`でsより強いサイズ優先
+
 ## ESP32系
 
 ```
