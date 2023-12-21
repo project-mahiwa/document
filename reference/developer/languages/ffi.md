@@ -6,12 +6,12 @@ Go,C/C++,Rustではより多くの型が存在するが，例えばint8などを
 
 下記の表の通りである．
 
-| webassemblyでの型 | mahiwa-backendでの型                                    | mahiwa-frontend-rustでの型 | mahiwa-frontend-goでの型 |
-| ----------------- | ------------------------------------------------------- | -------------------------- | ------------------------ |
-| i32               | int,long,int8_t,int16_t,int32_t,uint8_t,uint16_t,       | i32                        | int32                    |
-| i64               | int64_t,unsigned int,unsigned long, uint32_t,(uint64_t) | i64                        | int64                    |
-| f32               | float,float_t                                           | f32                        | float32                  |
-| f64               | double,double_t                                         | f64                        | float64                  |
+| webassemblyでの型 | mahiwa-backendでの型                                    | mahiwa-frontend-rustでの型 | mahiwa-frontend-goでの型 | wasm3 i_signatureでの型 |
+| ----------------- | ------------------------------------------------------- | -------------------------- | ------------------------ | ----------------------- |
+| i32               | int,long,int8_t,int16_t,int32_t,uint8_t,uint16_t,       | i32                        | int32                    | i                       |
+| i64               | int64_t,unsigned int,unsigned long, uint32_t,(uint64_t) | i64                        | int64                    | I                       |
+| f32               | float,float_t                                           | f32                        | float32                  | f                       |
+| f64               | double,double_t                                         | f64                        | float64                  | F                       |
 
 ### C/C++での補足
 
