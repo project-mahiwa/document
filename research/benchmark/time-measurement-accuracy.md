@@ -6,7 +6,13 @@
 
 ## Mahiwa
 
-(WebAssemblyへのコンパイル元の言語は依存しないので，1言語のみで測定)
+### from Rust
+
+999875(μs)
+
+#### from Go
+
+1000542(μs)
 
 ## C/C++(Arduino)
 
