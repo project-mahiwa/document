@@ -26,6 +26,8 @@ sin,absなどをWebAssemblyへのコンパイラが吐くコードを使うの�
 
 https://chat.openai.com/c/feaf1a0b-7874-42dc-87d0-74124864c497
 
+https://github.com/TOPLLab/WARDuino/tree/main/benchmarks/tasks
+
 #### fac 階乗
 
 #### fib フィボナッチ数列

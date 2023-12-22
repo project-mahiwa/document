@@ -13,3 +13,14 @@
 ## 結果
 
 ## 関連Issues
+
+- https://github.com/project-mahiwa/document/issues/46#issuecomment-1864612213
+
+## 備考
+
+- Arduinoのsqrtの返り値がf64なので，GoやRustでも同様にf64の精度でsqrtを計算するようにする(意図的に型キャストしている)
+- 最適化オプションはサイズ優先(Arduinoデフォルト)にする
+  - PlatformIO(framework=arduino)のビルドはデフォルトがs
+  - インタプリタ型のMicroPyhonは指定なし
+  - TinyGoはデフォルトがzだがコマンドライン引数でsを指定
+  - Rustのリリースビルドはデフォルトが1だがsにする
