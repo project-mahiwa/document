@@ -24,16 +24,16 @@ Rust Crateのリポジトリはmahiwa-frontend-rustですが，Rustではスネ�
 
 ## Flash Environment
 
-### Install platformIO Core(CLI)
+### Install tools
 
 ::: code-group
 
 ```bash [Homebrew(MacOS, Linux)]
-brew install platformio
+brew install wabt platformio
 ```
 
-```bash [Yay(Arch Linux)]
-yay -S platformio-git
+```bash [Pacman(Arch Linux)]
+sudo pacman -S wabt platformio-core
 ```
 
 :::

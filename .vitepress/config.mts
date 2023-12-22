@@ -67,6 +67,24 @@ export default defineConfig({
             text: "Rust",
             link: "/reference/developer/languages/rust",
           },
+          {
+            text: "Troubleshooting",
+            collapsed: true,
+            items: [
+              {
+                text: "mahiwa",
+                link: "/reference/developer/troubleshooting/",
+              },
+              {
+                text: "Go",
+                link: "/reference/developer/troubleshooting/go",
+              },
+              {
+                text: "Rust",
+                link: "/reference/developer/troubleshooting/rust",
+              },
+            ],
+          },
         ],
       },
       {
@@ -116,7 +134,21 @@ export default defineConfig({
         text: "Research",
         collapsed: true,
         items: [
-          { text: "Benchmark", link: "/research/benchmark/" },
+          {
+            text: "Benchmark",
+            link: "/research/benchmark/",
+            collapsed: true,
+            items: [
+              { text: "Environment", link: "/research/benchmark/environment" },
+              {
+                text: "Time measurement accuracy",
+                link: "/research/benchmark/time-measurement-accuracy",
+              },
+              { text: "Coremark", link: "/research/benchmark/coremark" },
+              { text: "primes", link: "/research/benchmark/original/prime" },
+            ],
+          },
+          { text: "Q&A", link: "/research/qa/" },
           {
             text: "Other Method",
             collapsed: true,

@@ -4,6 +4,10 @@
 
 ## ベンチマークプログラム
 
+### coremark wasm version
+
+[detials](/research/benchmark/coremark)
+
 ### wasm3での関数登録増加による速度変化
 
 wasm3への関数登録して速度低下していないのかを見たい

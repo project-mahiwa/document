@@ -1,10 +1,11 @@
 # Support Languages
 
-| Language | Support |                       Repository                       |
-| -------- | :-----: | :----------------------------------------------------: |
-| Go       |   Yes   |  https://github.com/project-mahiwa/mahiwa-frontend-go  |
-| Rust     |   Yes   | https://github.com/project-mahiwa/mahiwa-frontend-rust |
-| Zig      |   Yet   | https://github.com/project-mahiwa/mahiwa-frontend-zig  |
+| Language |   Support   |                       Repository                       |
+| -------- | :---------: | :----------------------------------------------------: |
+| Go       |     Yes     |  https://github.com/project-mahiwa/mahiwa-frontend-go  |
+| Rust     |     Yes     | https://github.com/project-mahiwa/mahiwa-frontend-rust |
+| Zig      |     Yet     | https://github.com/project-mahiwa/mahiwa-frontend-zig  |
+| C/C++    | Not support |                                                        |
 
 # Support Languages
 
