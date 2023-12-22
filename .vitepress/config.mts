@@ -134,7 +134,20 @@ export default defineConfig({
         text: "Research",
         collapsed: true,
         items: [
-          { text: "Benchmark", link: "/research/benchmark/" },
+          {
+            text: "Benchmark",
+            link: "/research/benchmark/",
+            collapsed: true,
+            items: [
+              { text: "Environment", link: "/research/benchmark/environment" },
+              {
+                text: "Time measurement accuracy",
+                link: "/research/benchmark/time-measurement-accuracy",
+              },
+              { text: "Coremark", link: "/research/benchmark/coremark" },
+              { text: "primes", link: "/research/benchmark/original/prime" },
+            ],
+          },
           { text: "Q&A", link: "/research/qa/" },
           {
             text: "Other Method",
