@@ -145,7 +145,7 @@ export default defineConfig({
                 link: "/research/benchmark/time-measurement-accuracy",
               },
               { text: "Coremark", link: "/research/benchmark/coremark" },
-              { text: "primes", link: "/research/benchmark/original/prime" },
+              { text: "Tasks", link: "/research/benchmark/task/" },
             ],
           },
           { text: "Q&A", link: "/research/qa/" },
