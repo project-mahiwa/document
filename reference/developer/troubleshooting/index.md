@@ -10,7 +10,7 @@ CPUパニックで再起動を繰り返しているときなどは，書込み�
 
 - 電源ボタン長押ししながら書込の直前まで持っていくと，動く可能性が高い
 
-```
+```sh
 A fatal error occurred: No serial data received.
 ```
 
@@ -20,7 +20,7 @@ A fatal error occurred: No serial data received.
 
 - 適切な権限がない
 
-```
+```sh
 sudo chmod a+rw /dev/ttyACM0
 ```
 
