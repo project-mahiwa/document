@@ -16,7 +16,7 @@ A fatal error occurred: No serial data received.
 
 のときなどに有効
 
-## A fatal error occurred: Could not open <portName>, the port doesn't exist
+## A fatal error occurred: Could not open portName, the port doesn't exist
 
 - 適切な権限がない
 
