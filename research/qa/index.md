@@ -1,6 +1,6 @@
 # よくある質問
 
-トラブルシューティングは[こちら](/reference/developer/troubleshooting)
+トラブルシューティングは[こちら](/reference/developer/troubleshooting/)
 
 ## printIntとprintLongで表せる数が同じなのはなぜか
 
