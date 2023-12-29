@@ -4,6 +4,23 @@
 
 よくある質問は[こちら](/research/qa/)
 
+## DRAM Overflow
+
+サイズオーバーによるエラー．
+
+wasmが大きすぎるので小さくするしか無い．(Goであればwasm-stripで小さくなるし，Rustであればopt=sよりopt=1が最小になる)
+
+TinyGoで作ったwasmをwasm-stripに掛けると89k -> 16kになる
+
+```
+.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: .pio/build/m5stack-core2/firmware.elf section `.dram0.bss' will not fit in region `dram0_0_seg'
+.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: DRAM segment data does not fit.
+.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: DRAM segment data does not fit.
+.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/bin/ld: region `dram0_0_seg' overflowed by 4512 bytes
+collect2: error: ld returned 1 exit status
+*** [.pio/build/m5stack-core2/firmware.elf] Error 1
+```
+
 ## No serial data received
 
 CPUパニックで再起動を繰り返しているときなどは，書込みが成功しにくい
