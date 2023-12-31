@@ -93,16 +93,22 @@ export default defineConfig({
         items: [
           {
             text: "Backend",
+            link: "/reference/maintainer/backend/",
             collapsed: true,
             items: [
               {
                 text: "Add MCU",
                 link: "/reference/maintainer/backend/add-mcu",
               },
+              {
+                text: "Add API",
+                link: "/reference/maintainer/backend/add-api",
+              },
             ],
           },
           {
             text: "Frontend",
+            link: "/reference/maintainer/frontend/",
             collapsed: true,
             items: [
               {
