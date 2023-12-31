@@ -96,6 +96,7 @@ m3_LinkRawFunction(module, serial, "printLong", "v(i)", &m3_printLong);
 ```
 
 - TinyGoではうまく実装できなかった処理をこのようにする傾向があるため，コンパイル時の出力を確認することで対処できる可能性が高い
+- TinyGoではWASI(WASI preview1にない拡張も含む)と名前かぶりしている場合にも起こりうる
 
 ## Debug exception reason: Stack canary watchpoint triggered (wasm3)
 
