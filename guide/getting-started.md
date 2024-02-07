@@ -24,7 +24,7 @@ Rust Crateのリポジトリはmahiwa-frontend-rustですが，Rustではスネ�
 
 ## Flash Environment
 
-### Install tools
+### Install dependency tools
 
 ::: code-group
 
@@ -33,12 +33,12 @@ brew install wabt platformio
 ```
 
 ```bash [Pacman(Arch Linux)]
-sudo pacman -S wabt platformio-core
+sudo pacman -S git xxd wabt platformio-core
 ```
 
 :::
 
-### Clone Mahiwa Backend
+### Install Mahiwa Burner
 
 ```bash
 git clone https://github.com/project-mahiwa/mahiwa-backend.git
