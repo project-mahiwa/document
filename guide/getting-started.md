@@ -24,7 +24,19 @@ Rust Crateのリポジトリはmahiwa-frontend-rustですが，Rustではスネ�
 
 ## Flash Environment
 
+### Install Mahiwa Burner
+
+https://github.com/project-mahiwa/mahiwa-burner/releases のページより環境にあった最新の書き込みツールをインストールしてください．
+
+:::warning
+GUI自体はクロスプラットホームですが，
+動作確認済みOSはUbuntu, Arch Linuxのみです．
+:::
+
 ### Install dependency tools
+
+現段階のMahiwa Burnerでは依存しているCLIアプリケーションを
+ご自身でインストールしていただく必要があります．
 
 ::: code-group
 
@@ -37,12 +49,6 @@ sudo pacman -S git xxd wabt platformio-core
 ```
 
 :::
-
-### Install Mahiwa Burner
-
-```bash
-git clone https://github.com/project-mahiwa/mahiwa-backend.git
-```
 
 ## Write Hello World
 
@@ -88,50 +94,45 @@ fn _start() {
 
 ## Generate WebAssembly
 
+### コンパイル設定ファイルの用意
+
+::: code-group
+
+```json [Goの場合はtarget.jsonを追加]
+{
+  "inherits": ["wasm"],
+  "ldflags": [
+    "--initial-memory=65536",
+    "--max-memory=65536",
+    "-zstack-size=2048"
+  ]
+}
+```
+
+```toml [Rustの場合は.cargo/configを追加]
+[build]
+target = "wasm32-unknown-unknown"
+rustflags = [
+  "-C", "link-args=-zstack-size=2048 -s",
+]
+```
+
+:::
+
+### WebAssemblyバイナリコードへのコンパイル
+
 ::: code-group
 
 ```bash [Go]
-🚧constructing
+tinygo build -target ./target.json -o main.wasm main.go
 ```
 
 ```bash [Rust]
-🚧constructing
+cargo build --release
 ```
 
 :::
-
-## Setup WebAssembly
-
-```bash
-🚧constructing
-```
 
 ## Flash to MCU
 
-```bash
-cd {path to mahiwa-backend dir}
-```
-
-::: code-group
-
-```bash [RaspberryPi Pico W]
-make r-pico-w
-```
-
-```bash [ATOM Matrix]
-make r-atom-m
-```
-
-```bash [ATOM S3]
-make r-atom-s3
-```
-
-```bash [M5Stack Core2]
-make r-core2
-```
-
-```bash [M5Stamp C3, C3U]
-make r-c3
-```
-
-:::
+Mahiwa Burnerを起動して，手順に従い書き込んでください．
